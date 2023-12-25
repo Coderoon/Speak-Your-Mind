@@ -57,7 +57,7 @@ def speak(text, rate=150):
         engine.setProperty('volume', 0.9)
         engine.say(text)
         engine.runAndWait()
-    except Exception as e:
+    except Exception as e: 
         print(f"Error: {e}")
 
 def takeCommand():
