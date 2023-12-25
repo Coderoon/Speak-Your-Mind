@@ -1,1 +1,1 @@
-apikey = "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"
+apikey = "*************************************" # <- Put your ChatGPT Api key here
