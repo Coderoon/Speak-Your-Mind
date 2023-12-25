@@ -13,7 +13,7 @@ def chat(query):
     global chatStr
     print(chatStr)
     openai.api_key = apikey
-    chatStr += f"******: {query}\*******: " # Put your name and the bot name. e.g: chatStr += f"John: {query}\Nexi: "
+    chatStr += f"******: {query}\Coderoon: " # Put enter you name inplace of sterick: "
     response = openai.Completion.create(
         engine="text-davinci-003",
         prompt=chatStr,
@@ -70,9 +70,9 @@ def takeCommand():
         print(f"User said: {query}")
         return query
     except Exception as e:
-        return "Some Error has occurred. Sorry from ****" # <- Put the bot name in the sterick
+        return "Some Error has occurred. Sorry from Coderoon" 
 
-text_to_speak = "Hello, I am *********." # <- Choose the bot name here
+text_to_speak = "Hello, I am Coderoon." 
 speak(text_to_speak, rate=100)
 
 while True:
